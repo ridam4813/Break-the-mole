@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Break the Mole</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="logo">
+                <div class="logo-icon">🐹</div>
+
+                <div>
+                    <h1>Break the <span>Mole</span></h1>
+                </div>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <small>Score</small>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="stat">
+                    <small>Time</small>
+                    <strong id="time">30</strong>
+                </div>
+
+                <div class="stat">
+                    <small>Best</small>
+                    <strong id="best">0</strong>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Game -->
+        <main class="arena-card">
+
+            <div class="arena-header">
+
+                <div class="status">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span id="statusText">Ready to play</span>
+                </div>
+
+                <div class="difficulty" id="difficulty">
+                    Level 1
+                </div>
+
+            </div>
+
+
+            <div class="arena" id="arena">
+
+                <!-- Holes will be created with JavaScript -->
+
+                <div class="overlay" id="overlay">
+
+                    <div class="modal">
+
+                        <div class="emoji">🐹</div>
+
+                        <h2 id="modalTitle">
+                            Break the Mole!
+                        </h2>
+
+                        <p id="modalText">
+                            Hit the moles as quickly as possible.
+                            The faster you are, the higher your score!
+                        </p>
+
+                        <div class="instructions">
+
+                            <div class="instruction">
+                                <b>👆</b>
+                                <span>Tap Mole</span>
+                            </div>
+
+                            <div class="instruction">
+                                <b>🔥</b>
+                                <span>Build Combo</span>
+                            </div>
+
+                            <div class="instruction">
+                                <b>🏆</b>
+                                <span>Beat Best</span>
+                            </div>
+
+                        </div>
+
+                        <button class="start-btn" id="modalButton">
+                            START GAME
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="controls">
+
+                <button class="start-btn" id="startButton">
+                    START GAME
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
